@@ -160,12 +160,15 @@ a { text-decoration: none; color: inherit; }
 }
 
 .nav-wordmark {
-  font-family: var(--font-headline);
-  font-weight: 800;
-  font-size: 1.25rem;
-  color: var(--charcoal);
-  letter-spacing: -0.01em;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -860,11 +863,16 @@ a { text-decoration: none; color: inherit; }
 }
 
 .footer-wordmark {
-  font-family: var(--font-headline);
-  font-weight: 800;
-  font-size: 1.1rem;
-  color: var(--cream);
-  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 24px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
 }
 
 .footer-copy {
