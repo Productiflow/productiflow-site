@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productiflow — Custom eLearning, Delivered Fast</title>
+  <meta name="description" content="Productiflow is a subscription-based eLearning service. One request at a time, custom-built to match your brand, delivered in days." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Productiflow — Custom eLearning, Delivered Fast" />
+  <meta property="og:description" content="Productiflow is a subscription-based eLearning service. One request at a time, custom-built to match your brand, delivered in days." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://productiflow.com" />
+  <meta property="og:image" content="https://productiflow.com/og-image.png" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%2333658A'/><text y='.9em' font-size='72' x='50%' text-anchor='middle' fill='%23F7F4EF' font-family='sans-serif' font-weight='bold'>P</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=13" />
+</head>
+<body>
+
+  <!-- ===================== WAVE BACKGROUND (global, fixed) ===================== -->
+  <div class="wave-container" aria-hidden="true">
+    <svg class="wave-svg" id="waves" xmlns="http://www.w3.org/2000/svg">
+      <!-- Wave lines defined in JS -->
+    </svg>
+  </div>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav-wrapper">
+    <nav class="nav">
+      <a href="#" class="nav-wordmark">Productiflow</a>
+      <div class="nav-links">
+        <a href="#book-a-call" class="nav-link">Book a Call</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#faq" class="nav-link">FAQs</a>
+      </div>
+      <a href="#stripe" class="btn btn-orange">Join Now</a>
+      <button class="nav-hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="nav-mobile-menu">
+      <a href="#book-a-call" class="nav-link">Book a Call</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#faq" class="nav-link">FAQs</a>
+      <a href="#stripe" class="btn btn-orange">Join Now</a>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1 class="hero-headline">
+        eLearning that <em class="hero-emphasis">feels</em><br class="break-desktop" /> like your company.<br />
+        Delivered in days.
+      </h1>
+      <p class="hero-sub">
+        One subscription. Custom-built eLearning that matches your brand — not a pre-built course, not a toggle. No agencies, no per-seat licensing, no bloat.
+      </p>
+      <div class="hero-ctas">
+        <a href="#stripe" class="btn btn-orange btn-lg">Join Now</a>
+        <a href="#pricing" class="btn btn-outline btn-lg">See Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-heading">From request to delivered — in days.</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <h3 class="step-title">Subscribe</h3>
+          <p class="step-body">Choose a plan and subscribe in minutes. No contracts, no sales calls.</p>
+        </div>
+        <div class="step-divider" aria-hidden="true"></div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <h3 class="step-title">Submit your request</h3>
+          <p class="step-body">Tell us what you need. Simply send us your audience, goals, and brand kit. We handle the rest.</p>
+        </div>
+        <div class="step-divider" aria-hidden="true"></div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <h3 class="step-title">Receive your course</h3>
+          <p class="step-body">Custom-built eLearning delivered to your Inbox in days, ready to upload to any LMS.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BEFORE/AFTER SLIDER ===================== -->
+  <section class="slider-section" id="comparison">
+    <div class="container">
+      <h2 class="section-heading">See the difference.</h2>
+      <p class="section-sub">Generic eLearning templates vs. custom-built courses designed for your brand.</p>
+      <div class="comparison-slider" id="comparisonSlider">
+        <div class="comparison-before">
+          <div class="comparison-placeholder before-placeholder">
+            <span class="comparison-label">Generic</span>
+            <p class="comparison-desc">suitable for info-heavy courses</p>
+          </div>
+        </div>
+        <div class="comparison-after">
+          <div class="comparison-placeholder after-placeholder">
+            <span class="comparison-label">Yours</span>
+            <p class="comparison-desc">Custom-built to your brand</p>
+          </div>
+        </div>
+        <div class="comparison-handle" id="comparisonHandle">
+          <div class="handle-line"></div>
+          <div class="handle-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="20" fill="#F26419"/>
+              <path d="M13 20l-4 4m0 0l4 4m-4-4h18m0 0l-4-4m4 4l-4 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <p class="drag-hint">Drag to compare</p>
+    </div>
+  </section>
+
+  <!-- ===================== PRICING ===================== -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <h2 class="section-heading">Simple, transparent pricing.</h2>
+      <p class="section-sub">Pause or cancel anytime. No contracts.</p>
+      <div class="pricing-cards">
+
+        <!-- Starter -->
+        <div class="pricing-card">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price">
+            <span class="price-amount">$1,500</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <ul class="plan-features">
+            <li>Template-based modules</li>
+            <li>Suitable for info-heavy courses</li>
+            <li>1 active request at a time</li>
+            <li>Avg. 5–7 day turnaround</li>
+            <li>Pause or cancel anytime</li>
+          </ul>
+          <a href="#stripe" class="btn btn-outline btn-full">Join Now</a>
+        </div>
+
+        <!-- Standard (elevated) -->
+        <div class="pricing-card pricing-card--featured">
+          <div class="plan-popular">Most Popular</div>
+          <div class="plan-name">Standard</div>
+          <div class="plan-price">
+            <span class="price-amount">$3,500</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <ul class="plan-features">
+            <li>Template-based + custom-coded builds</li>
+            <li>Full interactivity</li>
+            <li>1 active request at a time</li>
+            <li>Avg. 3–5 day turnaround</li>
+            <li>Pause or cancel anytime</li>
+          </ul>
+          <a href="#stripe" class="btn btn-orange btn-full">Join Now</a>
+        </div>
+
+        <!-- Partner -->
+        <div class="pricing-card">
+          <div class="plan-name">Partner</div>
+          <div class="plan-price">
+            <span class="price-amount">$6,500</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <ul class="plan-features">
+            <li>Multiple active requests</li>
+            <li>Avg. 1–3 day turnaround</li>
+            <li>Monthly strategy call included</li>
+            <li class="feature-limited">Limited spots available</li>
+            <li>Pause or cancel anytime</li>
+          </ul>
+          <a href="#stripe" class="btn btn-outline btn-full">Join Now</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="faq-section" id="faq">
+    <div class="container container--narrow">
+      <h2 class="section-heading">Questions, answered.</h2>
+      <div class="faq-list">
+
+        <div class="faq-item faq-item--open">
+          <button class="faq-question" aria-expanded="true">
+            Is there a limit to how many requests I can make?
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Once subscribed, you can add as many eLearning module requests to your queue as you'd like, and they will be delivered one by one.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How does onboarding work?
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Once subscribed, you will receive an intake form where we collect your brand information and a link to submit projects to your queue.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How does the queue work?
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>You submit a request, it enters the queue, and we begin work immediately. We work through one request at a time, rotating across active clients to ensure fair turnaround for everyone. Once your eLearning module is delivered, we'll cycle back to your next queued request.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How fast will I receive my eLearning modules?
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Depending on which subscription package you choose, most requests take less than 5 business days, start to finish. More complex custom-coded courses may take longer.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What about revisions?
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Revision requests are prioritized over new work and addressed in the next available production window after your feedback is received. We'll continue to revise until you're 100% satisfied.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What if I need something faster?
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Upgrade to the Partner tier for priority 1–3 day turnaround and multiple simultaneous active requests.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can I pause or cancel?
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Anytime, for any reason, with no penalty. Manage everything through your Stripe billing portal.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you work with any LMS?
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. We deliver SCORM packages compatible with any major LMS — Workday, Cornerstone, Docebo, TalentLMS, and more.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What about video?
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Video is outside standard scope unless it can be efficiently produced with AI tools. Ask us about your specific project.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BOOK A CALL ===================== -->
+  <section class="book-section" id="book-a-call">
+    <div class="container text-center">
+      <h2 class="book-heading">Not sure which plan is right for you?</h2>
+      <p class="book-sub">Book a free 20-minute call. We'll talk through your training needs and find the right fit.</p>
+      <a href="#calendly" class="btn btn-orange btn-lg">Book a Call</a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-wordmark">Productiflow</div>
+      <div class="footer-copy">&copy; 2026 Productiflow. All rights reserved.</div>
+      <div class="footer-contact"><a href="mailto:hello@productiflow.com">hello@productiflow.com</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=5"></script>
+</body>
+</html>

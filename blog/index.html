@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Productiflow</title>
+  <meta name="description" content="Insights on eLearning design, instructional strategy, and custom course development from the Productiflow team." />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%2333658A'/><text y='.9em' font-size='72' x='50%' text-anchor='middle' fill='%23F7F4EF' font-family='sans-serif' font-weight='bold'>P</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="blog.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-wrapper">
+    <nav class="nav">
+      <a href="../index.html" class="nav-wordmark">Productiflow</a>
+      <div class="nav-links">
+        <a href="../index.html#book-a-call" class="nav-link">Book a Call</a>
+        <a href="../index.html#pricing" class="nav-link">Pricing</a>
+        <a href="../index.html#faq" class="nav-link">FAQs</a>
+      </div>
+      <a href="#stripe" class="btn btn-orange">Join Now</a>
+      <button class="nav-hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="nav-mobile-menu">
+      <a href="../index.html#book-a-call" class="nav-link">Book a Call</a>
+      <a href="../index.html#pricing" class="nav-link">Pricing</a>
+      <a href="../index.html#faq" class="nav-link">FAQs</a>
+      <a href="#stripe" class="btn btn-orange">Join Now</a>
+    </div>
+  </header>
+
+  <!-- BLOG HERO -->
+  <section class="blog-hero">
+    <div class="container">
+      <div class="section-label">Productiflow Blog</div>
+      <h1 class="blog-hero-heading">Insights on eLearning that works.</h1>
+      <p class="blog-hero-sub">Design, strategy, and craft from the people building custom courses every day.</p>
+    </div>
+  </section>
+
+  <!-- BLOG GRID -->
+  <section class="blog-grid-section">
+    <div class="container">
+      <div class="blog-grid">
+
+        <!-- Sample post card 1 -->
+        <article class="blog-card">
+          <a href="post.html" class="blog-card-link">
+            <div class="blog-card-image blog-card-image--1"></div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span class="blog-tag">Instructional Design</span>
+                <span class="blog-date">May 2026</span>
+              </div>
+              <h2 class="blog-card-title">Why "one request at a time" produces better eLearning</h2>
+              <p class="blog-card-excerpt">The agency model bundles everything into a single bloated project. Here's why a focused queue delivers faster — and better.</p>
+              <span class="blog-read-more">Read article →</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- Sample post card 2 -->
+        <article class="blog-card">
+          <a href="post.html" class="blog-card-link">
+            <div class="blog-card-image blog-card-image--2"></div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span class="blog-tag">Brand &amp; Design</span>
+                <span class="blog-date">April 2026</span>
+              </div>
+              <h2 class="blog-card-title">What makes eLearning feel like your brand — and why most courses don't</h2>
+              <p class="blog-card-excerpt">Generic templates share the same DNA. We break down the design decisions that actually make a difference.</p>
+              <span class="blog-read-more">Read article →</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- Sample post card 3 -->
+        <article class="blog-card">
+          <a href="post.html" class="blog-card-link">
+            <div class="blog-card-image blog-card-image--3"></div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span class="blog-tag">SCORM &amp; LMS</span>
+                <span class="blog-date">March 2026</span>
+              </div>
+              <h2 class="blog-card-title">SCORM in 2026: what you actually need to know</h2>
+              <p class="blog-card-excerpt">The spec is old, but it still runs most corporate LMS platforms. Here's the practical guide for L&D teams.</p>
+              <span class="blog-read-more">Read article →</span>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-wordmark">Productiflow</div>
+      <div class="footer-copy">&copy; 2026 Productiflow. All rights reserved.</div>
+      <div class="footer-contact"><a href="mailto:hello@productiflow.com">hello@productiflow.com</a></div>
+    </div>
+  </footer>
+
+  <script>
+    // Minimal nav scroll for blog pages
+    const nav = document.querySelector('.nav-wrapper');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20), { passive: true });
+    document.querySelector('.nav-hamburger').addEventListener('click', () => nav.classList.toggle('menu-open'));
+  </script>
+</body>
+</html>
